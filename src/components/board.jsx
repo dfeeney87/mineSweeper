@@ -274,9 +274,10 @@ export default class Board extends React.Component {
     render(){
         return(
             <div className="board">
+                <span> Left Click to Guess, Right Click to Flag Mine </span>
                 <div className="game-info">
                     <span className="mine-count"> Mines Remaining: {this.state.mineCount} </span>
-                    <span className="info"> Game Status: {this.state.gameStatus} </span>
+                    <span className="info"> {this.state.gameStatus} </span>
                 </div>
                 {this.renderBoard(this.state.boardData)}
             </div>

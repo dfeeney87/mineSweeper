@@ -27,12 +27,14 @@ body {
   padding: 7px;
   text-align: center;
   color: #fff;
-  /* min-height: 100px; */
   border-radius: 7px;
 }
 .game .game-info .info {
   display: block;
   margin-top: 15px;
+}
+.info {
+  font-size: 2em;
 }
 .game .cell {
   background: #7b7b7b;
@@ -44,8 +46,12 @@ body {
   width: 45px;
   cursor: pointer;
   border-radius: 5px;
-  color: #fff;
+  color: yellow;
   font-weight: 600;
+}
+
+.game .cell:hover {
+  background: #7a6363;
 }
 .game .cell:focus {
   outline: none;
@@ -53,6 +59,11 @@ body {
 .game .hidden {
   background: #2e2829;
 }
+
+.game .hidden:hover{
+  background: #00658e;
+}
+
 .game .is-flag,
 .game .is-mine {
   color: #fc543c;
